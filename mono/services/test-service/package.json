@@ -1,0 +1,19 @@
+{
+  "name": "test-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "sls": "sls"
+  },
+  "dependencies": {
+    "@nestjs/common": "6.9.0",
+    "@nestjs/core": "6.9.0",
+    "reflect-metadata": "0.1.13",
+    "rxjs": "6.5.3"
+  },
+  "devDependencies": {
+    "uuid": "3.3.3"
+  }
+}

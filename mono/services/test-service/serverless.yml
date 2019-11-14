@@ -1,0 +1,19 @@
+service:
+  name: test-service
+
+plugins:
+  - serverless-plugin-monorepo
+
+provider:
+  name: aws
+  stage: ${self:custom.stage}
+  runtime: nodejs10.x
+  memorySize: 1024
+  region: us-west-2
+
+custom:
+  stage: ${opt:stage, 'dev'}
+
+functions:
+  test-function:
+    handler: index.handler

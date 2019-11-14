@@ -1,0 +1,23 @@
+{
+  "name": "sls-devdep-repro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Adam Duro <adam@duromedia.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "sls": "sls",
+    "package": "sls package",
+    "reset": "rm -Rf node_modules && rm -Rf .serverless"
+  },
+  "dependencies": {
+    "@nestjs/common": "6.9.0",
+    "@nestjs/core": "6.9.0",
+    "reflect-metadata": "0.1.13",
+    "rxjs": "6.5.3"
+  },
+  "devDependencies": {
+    "serverless": "1.57.0",
+    "uuid": "3.3.3"
+  }
+}
